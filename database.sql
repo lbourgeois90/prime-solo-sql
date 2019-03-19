@@ -17,3 +17,13 @@ SELECT "username", "account_balance" FROM "accounts" ORDER BY "account_balance" 
 SELECT "username", "account_balance" FROM "accounts" ORDER BY "account_balance" ASC LIMIT 3;
 
 --7.How do you get all users with account balances that are more than $100?
+SELECT "username" FROM "accounts" WHERE "account_balance" > 100;
+
+--8.How do you add a new account?
+INSERT INTO accounts (username, city, transactions_completed, transactions_attempted, account_balance) VALUES () with the corresponding values you want to add
+
+--9 The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: How do you delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
+
+DELETE FROM "accounts" WHERE "city"='miami' AND "transactions_completed" < 5;
+
+DELETE FROM "accounts" WHERE "city"='phoenix' AND "transactions_completed" < 5;
