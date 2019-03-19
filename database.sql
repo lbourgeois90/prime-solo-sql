@@ -27,3 +27,12 @@ INSERT INTO accounts (username, city, transactions_completed, transactions_attem
 DELETE FROM "accounts" WHERE "city"='miami' AND "transactions_completed" < 5;
 
 DELETE FROM "accounts" WHERE "city"='phoenix' AND "transactions_completed" < 5;
+
+--STRETCH GOALS
+--1. Anthony moved to Sante Fe
+UPDATE "accounts" SET "city" = 'santa fe' WHERE "username" = 'anthony';
+
+--2. Grace closed her account
+DELETE FROM "accounts" WHERE "username" = 'grace';
+
+--3. 
