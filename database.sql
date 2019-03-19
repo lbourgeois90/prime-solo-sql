@@ -34,5 +34,3 @@ UPDATE "accounts" SET "city" = 'santa fe' WHERE "username" = 'anthony';
 
 --2. Grace closed her account
 DELETE FROM "accounts" WHERE "username" = 'grace';
-
---3. 
